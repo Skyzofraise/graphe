@@ -144,6 +144,8 @@ gulp.task('watch', function () {
     gulp.watch(DIR.src + '/fonts/**/*', ['fonts']);
     gulp.watch(DIR.src + '/scss/**/*.+(scss|sass)', ['styles']);
     gulp.watch(DIR.src + '/js/**/*.js', ['scripts']);
+
+    gulp.watch(DIR.dest + '/**/*.+(php|html)', livereload.reload);
 });
 
 /**
