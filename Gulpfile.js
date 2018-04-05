@@ -139,6 +139,7 @@ gulp.task('scripts', function () {
  */
 gulp.task('watch', function () {
     livereload.listen();
+    gulp.watch(DIR.src + '/**/**/*.+(php|html)', ['copy-pages']);
     gulp.watch(DIR.src + '/**/*.+(php|html)', ['copy-pages']);
     gulp.watch(DIR.src + '/img/**/*', ['images']);
     gulp.watch(DIR.src + '/fonts/**/*', ['fonts']);
